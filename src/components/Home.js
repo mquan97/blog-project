@@ -14,9 +14,7 @@ const Home = () => {
         setBlog(newBlogs)
       }
 
-      useEffect(() => {
-          
-      })
+      
 
     return ( 
         <div className="home">
