@@ -1,12 +1,9 @@
-import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
 import useFetch from './useFetch';
 
 const Home = () => {
     const URL = 'http://localhost:8000/blog'
     const { data, isPending, err } = useFetch(URL)
-
-    console.log(useFetch(URL))
 
     return ( 
         <div className="home">
