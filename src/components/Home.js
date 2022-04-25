@@ -8,12 +8,10 @@ const Home = () => {
     return ( 
         <div className="home">
             { isPending && <div>Loading ...</div> }
-            {/* { err && <div>{ err }</div> } */}
             { err && <div>{ err }</div> }
             { data && <BlogList blog = {data} titles = "Custom blog" /> }
-            {/* <BlogList blog = {blog.filter(blog => { return (blog.author === 'yoshi')})} titles = "Yoshi's blog" /> */}
         </div>
     );
 }
- 
+
 export default Home;

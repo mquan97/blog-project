@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Create = () => {
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
-    const [author, setAuthor] = useState('mario')
+    const [author, setAuthor] = useState('alex')
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
@@ -38,8 +38,10 @@ const Create = () => {
                 />
                 <label>Blog author:</label>
                 <select value={author} onChange={(e) => setAuthor(e.target.value)}>
-                    <option value="mario">Mario</option>
-                    <option value="luigi">Luigi</option>
+                    <option value="alex">Alex</option>
+                    <option value="luis">Luis</option>
+                    <option value="hans">Hans</option>
+                    <option value="anastasia">Anastasia</option>
                 </select>
                 <button>Add Blog</button>
             </form>
